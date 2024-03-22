@@ -1,0 +1,46 @@
+[0.996s] Invoking command in '/home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build
+[1.327s] running develop
+[1.327s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.327s]   warnings.warn(
+[1.551s] Removing /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples-rclpy-minimal-subscriber.egg-link (link to .)
+[1.591s] Invoked command in '/home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber' returned '0': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build
+[1.593s] Invoking command in '/home/plague/ros2_ws/src/examples/rclpy/topics/minimal_subscriber': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build install --record /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/install.log --single-version-externally-managed install_data --force
+[1.821s] running egg_info
+[1.821s] writing ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/PKG-INFO
+[1.822s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/dependency_links.txt
+[1.822s] writing entry points to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/entry_points.txt
+[1.822s] writing requirements to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/requires.txt
+[1.822s] writing top-level names to ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/top_level.txt
+[1.823s] reading manifest file '../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[1.824s] writing manifest file '../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info/SOURCES.txt'
+[1.824s] running build
+[1.824s] running build_py
+[1.825s] creating /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build
+[1.825s] creating /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib
+[1.825s] creating /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[1.825s] copying examples_rclpy_minimal_subscriber/__init__.py -> /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[1.825s] copying examples_rclpy_minimal_subscriber/subscriber_member_function.py -> /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[1.825s] copying examples_rclpy_minimal_subscriber/subscriber_old_school.py -> /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[1.825s] copying examples_rclpy_minimal_subscriber/subscriber_lambda.py -> /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber
+[1.825s] running install
+[1.825s] running install_lib
+[1.826s] creating /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[1.826s] copying /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/__init__.py -> /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[1.826s] copying /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_member_function.py -> /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[1.826s] copying /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_old_school.py -> /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[1.827s] copying /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build/lib/examples_rclpy_minimal_subscriber/subscriber_lambda.py -> /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber
+[1.827s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/__init__.py to __init__.cpython-310.pyc
+[1.827s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/subscriber_member_function.py to subscriber_member_function.cpython-310.pyc
+[1.828s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/subscriber_old_school.py to subscriber_old_school.cpython-310.pyc
+[1.828s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber/subscriber_lambda.py to subscriber_lambda.cpython-310.pyc
+[1.828s] running install_data
+[1.828s] copying resource/examples_rclpy_minimal_subscriber -> /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/share/ament_index/resource_index/packages
+[1.828s] copying package.xml -> /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/share/examples_rclpy_minimal_subscriber
+[1.829s] running install_egg_info
+[1.830s] Copying ../../../../../build/examples_rclpy_minimal_subscriber/examples_rclpy_minimal_subscriber.egg-info to /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages/examples_rclpy_minimal_subscriber-0.18.0-py3.10.egg-info
+[1.831s] running install_scripts
+[1.850s] Installing subscriber_lambda script to /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[1.850s] Installing subscriber_member_function script to /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[1.850s] Installing subscriber_old_school script to /home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/examples_rclpy_minimal_subscriber
+[1.850s] writing list of installed files to '/home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/install.log'
+[1.873s] Invoked command in '/home/plague/ros2_ws/src/examples/rclpy/topics/minimal_subscriber' returned '0': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_subscriber build --build-base /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/build install --record /home/plague/ros2_ws/build/examples_rclpy_minimal_subscriber/install.log --single-version-externally-managed install_data --force

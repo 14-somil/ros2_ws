@@ -1,0 +1,105 @@
+[0.902s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor': AMENT_PREFIX_PATH=/home/plague/ros2_ws/install/examples_rclcpp_multithreaded_executor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/plague/ros2_ws/install/examples_rclcpp_multithreaded_executor /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.994s] UpdateCTestConfiguration  from :/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/CTestConfiguration.ini
+[0.996s] Parse Config file:/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/CTestConfiguration.ini
+[0.996s]    Site: plague-0214
+[0.996s]    Build name: (empty)
+[0.996s]  Add coverage exclude regular expressions.
+[0.996s] Create new tag: 20240320-0658 - Experimental
+[0.996s] UpdateCTestConfiguration  from :/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/CTestConfiguration.ini
+[0.997s] Parse Config file:/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/CTestConfiguration.ini
+[0.997s] Test project /home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor
+[0.997s] Constructing a list of tests
+[0.997s] Done constructing a list of tests
+[0.997s] Updating test list for fixtures
+[0.997s] Added 0 tests to meet fixture requirements
+[0.997s] Checking test dependency graph...
+[0.997s] Checking test dependency graph end
+[0.997s] test 1
+[0.997s]     Start 1: copyright
+[0.997s] 
+[0.997s] 1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/copyright.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/ament_copyright/copyright.txt" "--command" "/opt/ros/iron/bin/ament_copyright" "--xunit-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/copyright.xunit.xml"
+[0.997s] 1: Test timeout computed to be: 200
+[0.999s] 1: -- run_test.py: invoking following command in '/home/plague/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[0.999s] 1:  - /opt/ros/iron/bin/ament_copyright --xunit-file /home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/copyright.xunit.xml
+[1.177s] 1: No problems found, checked 1 files
+[1.195s] 1: -- run_test.py: return code 0
+[1.196s] 1: -- run_test.py: verify result file '/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/copyright.xunit.xml'
+[1.210s] 1/6 Test #1: copyright ........................   Passed    0.30 sec
+[1.210s] test 2
+[1.210s]     Start 2: cppcheck
+[1.210s] 
+[1.210s] 2: Test command: /usr/bin/python3.10 "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cppcheck.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/ament_cppcheck/cppcheck.txt" "--command" "/opt/ros/iron/bin/ament_cppcheck" "--xunit-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cppcheck.xunit.xml"
+[1.210s] 2: Test timeout computed to be: 300
+[1.290s] 2: -- run_test.py: invoking following command in '/home/plague/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[1.290s] 2:  - /opt/ros/iron/bin/ament_cppcheck --xunit-file /home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cppcheck.xunit.xml
+[1.419s] 2: cppcheck 2.7 has known performance issues and therefore will not be used, set the AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS environment variable to override this.
+[1.447s] 2: -- run_test.py: return code 0
+[1.447s] 2: -- run_test.py: verify result file '/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cppcheck.xunit.xml'
+[1.450s] 2/6 Test #2: cppcheck .........................   Passed    0.24 sec
+[1.450s] test 3
+[1.450s]     Start 3: cpplint
+[1.450s] 
+[1.450s] 3: Test command: /usr/bin/python3.10 "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cpplint.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/ament_cpplint/cpplint.txt" "--command" "/opt/ros/iron/bin/ament_cpplint" "--xunit-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cpplint.xunit.xml"
+[1.450s] 3: Test timeout computed to be: 120
+[1.539s] 3: -- run_test.py: invoking following command in '/home/plague/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[1.539s] 3:  - /opt/ros/iron/bin/ament_cpplint --xunit-file /home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cpplint.xunit.xml
+[1.709s] 3: Using '--root=..' argument
+[1.709s] 3: 
+[1.709s] 3: Done processing /home/plague/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor/multithreaded_executor.cpp
+[1.709s] 3: 
+[1.709s] 3: No problems found
+[1.738s] 3: -- run_test.py: return code 0
+[1.738s] 3: -- run_test.py: verify result file '/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/cpplint.xunit.xml'
+[1.738s] 3/6 Test #3: cpplint ..........................   Passed    0.29 sec
+[1.738s] test 4
+[1.738s]     Start 4: lint_cmake
+[1.738s] 
+[1.738s] 4: Test command: /usr/bin/python3.10 "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/lint_cmake.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/iron/bin/ament_lint_cmake" "--xunit-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/lint_cmake.xunit.xml"
+[1.738s] 4: Test timeout computed to be: 60
+[1.804s] 4: -- run_test.py: invoking following command in '/home/plague/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[1.804s] 4:  - /opt/ros/iron/bin/ament_lint_cmake --xunit-file /home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/lint_cmake.xunit.xml
+[1.869s] 4: 
+[1.870s] 4: No problems found
+[1.886s] 4: -- run_test.py: return code 0
+[1.886s] 4: -- run_test.py: verify result file '/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/lint_cmake.xunit.xml'
+[1.900s] 4/6 Test #4: lint_cmake .......................   Passed    0.16 sec
+[1.900s] test 5
+[1.900s]     Start 5: uncrustify
+[1.900s] 
+[1.900s] 5: Test command: /usr/bin/python3.10 "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/uncrustify.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/ament_uncrustify/uncrustify.txt" "--command" "/opt/ros/iron/bin/ament_uncrustify" "--xunit-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/uncrustify.xunit.xml"
+[1.900s] 5: Test timeout computed to be: 60
+[2.026s] 5: -- run_test.py: invoking following command in '/home/plague/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[2.026s] 5:  - /opt/ros/iron/bin/ament_uncrustify --xunit-file /home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/uncrustify.xunit.xml
+[2.147s] 5: No code style divergence in file 'multithreaded_executor.cpp'
+[2.148s] 5: 
+[2.148s] 5: No problems found
+[2.153s] 5: -- run_test.py: return code 0
+[2.153s] 5: -- run_test.py: verify result file '/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/uncrustify.xunit.xml'
+[2.171s] 5/6 Test #5: uncrustify .......................   Passed    0.27 sec
+[2.172s] test 6
+[2.172s]     Start 6: xmllint
+[2.172s] 
+[2.172s] 6: Test command: /usr/bin/python3.10 "-u" "/opt/ros/iron/share/ament_cmake_test/cmake/run_test.py" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/xmllint.xunit.xml" "--package-name" "examples_rclcpp_multithreaded_executor" "--output-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/ament_xmllint/xmllint.txt" "--command" "/opt/ros/iron/bin/ament_xmllint" "--xunit-file" "/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/xmllint.xunit.xml"
+[2.174s] 6: Test timeout computed to be: 60
+[2.259s] 6: -- run_test.py: invoking following command in '/home/plague/ros2_ws/src/examples/rclcpp/executors/multithreaded_executor':
+[2.259s] 6:  - /opt/ros/iron/bin/ament_xmllint --xunit-file /home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/xmllint.xunit.xml
+[4.078s] 6: File 'package.xml' is valid
+[4.078s] 6: 
+[4.078s] 6: No problems found
+[4.092s] 6: -- run_test.py: return code 0
+[4.092s] 6: -- run_test.py: verify result file '/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor/test_results/examples_rclcpp_multithreaded_executor/xmllint.xunit.xml'
+[4.103s] 6/6 Test #6: xmllint ..........................   Passed    1.93 sec
+[4.103s] 
+[4.103s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 6
+[4.103s] 
+[4.103s] Label Time Summary:
+[4.103s] copyright     =   0.30 sec*proc (1 test)
+[4.103s] cppcheck      =   0.24 sec*proc (1 test)
+[4.103s] cpplint       =   0.29 sec*proc (1 test)
+[4.103s] lint_cmake    =   0.16 sec*proc (1 test)
+[4.103s] linter        =   3.19 sec*proc (6 tests)
+[4.103s] uncrustify    =   0.27 sec*proc (1 test)
+[4.104s] xmllint       =   1.93 sec*proc (1 test)
+[4.104s] 
+[4.104s] Total Test time (real) =   3.19 sec
+[4.107s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_multithreaded_executor' returned '0': AMENT_PREFIX_PATH=/home/plague/ros2_ws/install/examples_rclcpp_multithreaded_executor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/plague/ros2_ws/install/examples_rclcpp_multithreaded_executor /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

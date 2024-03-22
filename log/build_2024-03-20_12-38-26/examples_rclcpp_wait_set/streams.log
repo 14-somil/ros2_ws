@@ -1,0 +1,87 @@
+[0.038s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_wait_set': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake /home/plague/ros2_ws/src/examples/rclcpp/wait_set -DCMAKE_INSTALL_PREFIX=/home/plague/ros2_ws/install/examples_rclcpp_wait_set
+[0.313s] -- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.314s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.314s] -- Found example_interfaces: 0.10.2 (/opt/ros/iron/share/example_interfaces/cmake)
+[0.314s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.314s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.314s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.314s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.436s] -- Found rclcpp: 21.0.5 (/opt/ros/iron/share/rclcpp/cmake)
+[0.512s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.513s] -- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[0.640s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.840s] -- Found rclcpp_components: 21.0.5 (/opt/ros/iron/share/rclcpp_components/cmake)
+[0.924s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[0.985s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[1.080s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.081s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.082s] -- Configured cppcheck include dirs: /home/plague/ros2_ws/src/examples/rclcpp/wait_set/include
+[1.082s] -- Configured cppcheck exclude dirs and/or files: 
+[1.083s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.084s] -- Configured cpplint exclude dirs and/or files: 
+[1.084s] -- Added test 'lint_cmake' to check CMake code style
+[1.086s] -- Added test 'uncrustify' to check C / C++ code style
+[1.086s] -- Configured uncrustify additional arguments: 
+[1.087s] -- Added test 'xmllint' to check XML markup files
+[1.088s] -- Configuring done
+[1.133s] -- Generating done
+[1.135s] -- Build files have been written to: /home/plague/ros2_ws/build/examples_rclcpp_wait_set
+[1.233s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_wait_set' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake /home/plague/ros2_ws/src/examples/rclcpp/wait_set -DCMAKE_INSTALL_PREFIX=/home/plague/ros2_ws/install/examples_rclcpp_wait_set
+[1.233s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_wait_set': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --build /home/plague/ros2_ws/build/examples_rclcpp_wait_set -- -j8 -l8
+[1.309s] [35m[1mConsolidate compiler generated dependencies of target talker[0m
+[1.317s] [35m[1mConsolidate compiler generated dependencies of target wait_set_listener[0m
+[1.319s] [35m[1mConsolidate compiler generated dependencies of target wait_set[0m
+[1.326s] [35m[1mConsolidate compiler generated dependencies of target wait_set_talker[0m
+[1.326s] [35m[1mConsolidate compiler generated dependencies of target static_wait_set[0m
+[1.348s] [35m[1mConsolidate compiler generated dependencies of target listener[0m
+[1.357s] [35m[1mConsolidate compiler generated dependencies of target thread_safe_wait_set[0m
+[1.371s] [35m[1mConsolidate compiler generated dependencies of target wait_set_topics_and_timer[0m
+[1.373s] [  8%] Built target wait_set_listener
+[1.374s] [ 16%] Built target talker
+[1.380s] [ 25%] Built target wait_set_talker
+[1.390s] [ 33%] Built target wait_set
+[1.409s] [ 41%] Built target thread_safe_wait_set
+[1.412s] [ 50%] Built target wait_set_topics_and_timer
+[1.415s] [35m[1mConsolidate compiler generated dependencies of target wait_set_random_order[0m
+[1.419s] [ 58%] Built target static_wait_set
+[1.429s] [ 66%] Built target listener
+[1.440s] [35m[1mConsolidate compiler generated dependencies of target executor_random_order[0m
+[1.442s] [35m[1mConsolidate compiler generated dependencies of target wait_set_topics_with_different_rates[0m
+[1.458s] [35m[1mConsolidate compiler generated dependencies of target wait_set_composed[0m
+[1.460s] [ 75%] Built target wait_set_random_order
+[1.471s] [ 83%] Built target wait_set_topics_with_different_rates
+[1.478s] [ 91%] Built target executor_random_order
+[1.492s] [100%] Built target wait_set_composed
+[1.749s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_wait_set' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --build /home/plague/ros2_ws/build/examples_rclcpp_wait_set -- -j8 -l8
+[2.007s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_wait_set': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --install /home/plague/ros2_ws/build/examples_rclcpp_wait_set
+[2.015s] -- Install configuration: ""
+[2.015s] -- Execute custom install script
+[2.015s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_talker
+[2.015s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_listener
+[2.016s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/libtalker.so
+[2.016s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/liblistener.so
+[2.016s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set
+[2.016s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/static_wait_set
+[2.016s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/thread_safe_wait_set
+[2.016s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_topics_and_timer
+[2.016s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_random_order
+[2.017s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/executor_random_order
+[2.017s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_topics_with_different_rates
+[2.017s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/lib/examples_rclcpp_wait_set/wait_set_composed
+[2.018s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_wait_set
+[2.018s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_wait_set
+[2.021s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/ament_prefix_path.sh
+[2.021s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/ament_prefix_path.dsv
+[2.021s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/path.sh
+[2.022s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/environment/path.dsv
+[2.022s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.bash
+[2.022s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.sh
+[2.022s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.zsh
+[2.022s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/local_setup.dsv
+[2.022s] -- Symlinking: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/package.dsv
+[2.030s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/packages/examples_rclcpp_wait_set
+[2.031s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_wait_set
+[2.031s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/cmake/examples_rclcpp_wait_setConfig.cmake
+[2.031s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/cmake/examples_rclcpp_wait_setConfig-version.cmake
+[2.031s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_wait_set/share/examples_rclcpp_wait_set/package.xml
+[2.034s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_wait_set' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --install /home/plague/ros2_ws/build/examples_rclcpp_wait_set

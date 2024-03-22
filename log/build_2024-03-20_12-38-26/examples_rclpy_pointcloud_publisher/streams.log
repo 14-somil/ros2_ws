@@ -1,0 +1,38 @@
+[0.853s] Invoking command in '/home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build
+[1.230s] running develop
+[1.230s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.230s]   warnings.warn(
+[1.405s] Removing /home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples-rclpy-pointcloud-publisher.egg-link (link to .)
+[1.431s] Invoked command in '/home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher' returned '0': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build
+[1.432s] Invoking command in '/home/plague/ros2_ws/src/examples/rclpy/topics/pointcloud_publisher': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_pointcloud_publisher build --build-base /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build install --record /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/install.log --single-version-externally-managed install_data --force
+[1.709s] running egg_info
+[1.710s] writing ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/PKG-INFO
+[1.710s] writing dependency_links to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/dependency_links.txt
+[1.710s] writing entry points to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/entry_points.txt
+[1.710s] writing requirements to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/requires.txt
+[1.710s] writing top-level names to ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/top_level.txt
+[1.711s] reading manifest file '../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/SOURCES.txt'
+[1.713s] writing manifest file '../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info/SOURCES.txt'
+[1.713s] running build
+[1.713s] running build_py
+[1.713s] creating /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build
+[1.713s] creating /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build/lib
+[1.713s] creating /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[1.713s] copying examples_rclpy_pointcloud_publisher/__init__.py -> /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[1.713s] copying examples_rclpy_pointcloud_publisher/pointcloud_publisher.py -> /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher
+[1.713s] running install
+[1.713s] running install_lib
+[1.714s] creating /home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher
+[1.714s] copying /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher/__init__.py -> /home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher
+[1.714s] copying /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build/lib/examples_rclpy_pointcloud_publisher/pointcloud_publisher.py -> /home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher
+[1.715s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher/__init__.py to __init__.cpython-310.pyc
+[1.715s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher/pointcloud_publisher.py to pointcloud_publisher.cpython-310.pyc
+[1.715s] running install_data
+[1.716s] copying resource/examples_rclpy_pointcloud_publisher -> /home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/share/ament_index/resource_index/packages
+[1.716s] copying package.xml -> /home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/share/examples_rclpy_pointcloud_publisher
+[1.716s] running install_egg_info
+[1.718s] Copying ../../../../../build/examples_rclpy_pointcloud_publisher/examples_rclpy_pointcloud_publisher.egg-info to /home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages/examples_rclpy_pointcloud_publisher-0.18.0-py3.10.egg-info
+[1.718s] running install_scripts
+[1.736s] Installing pointcloud_publisher script to /home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/examples_rclpy_pointcloud_publisher
+[1.736s] writing list of installed files to '/home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/install.log'
+[1.759s] Invoked command in '/home/plague/ros2_ws/src/examples/rclpy/topics/pointcloud_publisher' returned '0': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_pointcloud_publisher build --build-base /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/build install --record /home/plague/ros2_ws/build/examples_rclpy_pointcloud_publisher/install.log --single-version-externally-managed install_data --force

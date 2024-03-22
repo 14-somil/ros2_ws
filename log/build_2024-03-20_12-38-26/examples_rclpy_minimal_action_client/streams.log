@@ -1,0 +1,50 @@
+[0.630s] Invoking command in '/home/plague/ros2_ws/build/examples_rclpy_minimal_action_client': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build
+[0.945s] running develop
+[0.945s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.945s]   warnings.warn(
+[1.073s] Removing /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples-rclpy-minimal-action-client.egg-link (link to .)
+[1.356s] Invoked command in '/home/plague/ros2_ws/build/examples_rclpy_minimal_action_client' returned '0': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build
+[1.358s] Invoking command in '/home/plague/ros2_ws/src/examples/rclpy/actions/minimal_action_client': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_action_client build --build-base /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build install --record /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/install.log --single-version-externally-managed install_data --force
+[1.691s] running egg_info
+[1.692s] writing ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/PKG-INFO
+[1.692s] writing dependency_links to ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/dependency_links.txt
+[1.692s] writing entry points to ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/entry_points.txt
+[1.692s] writing requirements to ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/requires.txt
+[1.692s] writing top-level names to ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/top_level.txt
+[1.695s] reading manifest file '../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/SOURCES.txt'
+[1.697s] writing manifest file '../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info/SOURCES.txt'
+[1.697s] running build
+[1.698s] running build_py
+[1.698s] creating /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build
+[1.698s] creating /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib
+[1.698s] creating /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[1.698s] copying examples_rclpy_minimal_action_client/__init__.py -> /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[1.698s] copying examples_rclpy_minimal_action_client/client_not_composable.py -> /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[1.698s] copying examples_rclpy_minimal_action_client/client.py -> /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[1.698s] copying examples_rclpy_minimal_action_client/client_cancel.py -> /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[1.699s] copying examples_rclpy_minimal_action_client/client_asyncio.py -> /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client
+[1.699s] running install
+[1.699s] running install_lib
+[1.700s] creating /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[1.700s] copying /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client/__init__.py -> /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[1.700s] copying /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client/client_not_composable.py -> /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[1.701s] copying /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client/client.py -> /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[1.701s] copying /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client/client_cancel.py -> /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[1.701s] copying /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build/lib/examples_rclpy_minimal_action_client/client_asyncio.py -> /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client
+[1.702s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client/__init__.py to __init__.cpython-310.pyc
+[1.702s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client/client_not_composable.py to client_not_composable.cpython-310.pyc
+[1.703s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client/client.py to client.cpython-310.pyc
+[1.704s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client/client_cancel.py to client_cancel.cpython-310.pyc
+[1.705s] byte-compiling /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client/client_asyncio.py to client_asyncio.cpython-310.pyc
+[1.706s] running install_data
+[1.706s] copying resource/examples_rclpy_minimal_action_client -> /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/share/ament_index/resource_index/packages
+[1.706s] copying package.xml -> /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/share/examples_rclpy_minimal_action_client
+[1.706s] running install_egg_info
+[1.709s] Copying ../../../../../build/examples_rclpy_minimal_action_client/examples_rclpy_minimal_action_client.egg-info to /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages/examples_rclpy_minimal_action_client-0.18.0-py3.10.egg-info
+[1.710s] running install_scripts
+[1.746s] Installing client script to /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[1.746s] Installing client_asyncio script to /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[1.746s] Installing client_cancel script to /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[1.746s] Installing client_not_composable script to /home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/examples_rclpy_minimal_action_client
+[1.746s] writing list of installed files to '/home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/install.log'
+[2.149s] Invoked command in '/home/plague/ros2_ws/src/examples/rclpy/actions/minimal_action_client' returned '0': PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/prefix_override:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../../build/examples_rclpy_minimal_action_client build --build-base /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/build install --record /home/plague/ros2_ws/build/examples_rclpy_minimal_action_client/install.log --single-version-externally-managed install_data --force

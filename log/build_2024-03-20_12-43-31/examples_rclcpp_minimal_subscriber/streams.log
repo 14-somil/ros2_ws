@@ -1,0 +1,44 @@
+[0.053s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --build /home/plague/ros2_ws/build/examples_rclcpp_minimal_subscriber -- -j8 -l8
+[0.122s] [  8%] Built target subscriber_lambda
+[0.132s] [ 25%] Built target wait_set_subscriber_library
+[0.133s] [ 33%] Built target subscriber_member_function_with_topic_statistics
+[0.138s] [ 41%] Built target subscriber_member_function_with_unique_network_flow_endpoints
+[0.138s] [ 50%] Built target subscriber_not_composable
+[0.140s] [ 58%] Built target subscriber_member_function
+[0.149s] [ 66%] Built target subscriber_member_function_with_type_adapter
+[0.152s] [ 75%] Built target subscriber_content_filtering
+[0.163s] [ 83%] Built target time_triggered_wait_set_subscriber
+[0.166s] [ 91%] Built target static_wait_set_subscriber
+[0.174s] [100%] Built target wait_set_subscriber
+[0.505s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --build /home/plague/ros2_ws/build/examples_rclcpp_minimal_subscriber -- -j8 -l8
+[0.716s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_minimal_subscriber': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --install /home/plague/ros2_ws/build/examples_rclcpp_minimal_subscriber
+[0.943s] -- Install configuration: ""
+[0.943s] -- Execute custom install script
+[0.943s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/wait_set_subscriber
+[0.943s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/static_wait_set_subscriber
+[0.943s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/time_triggered_wait_set_subscriber
+[0.943s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/libwait_set_subscriber_library.so
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_lambda
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_topic_statistics
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_type_adapter
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_member_function_with_unique_network_flow_endpoints
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_not_composable
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/lib/examples_rclcpp_minimal_subscriber/subscriber_content_filtering
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_subscriber
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_subscriber
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.sh
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/ament_prefix_path.dsv
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.sh
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/environment/path.dsv
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.bash
+[0.944s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.sh
+[0.945s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.zsh
+[0.945s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/local_setup.dsv
+[0.945s] -- Symlinking: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.dsv
+[0.945s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/packages/examples_rclcpp_minimal_subscriber
+[0.945s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/ament_index/resource_index/rclcpp_components/examples_rclcpp_minimal_subscriber
+[0.945s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig.cmake
+[0.945s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/cmake/examples_rclcpp_minimal_subscriberConfig-version.cmake
+[0.945s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_subscriber/share/examples_rclcpp_minimal_subscriber/package.xml
+[0.964s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_minimal_subscriber' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --install /home/plague/ros2_ws/build/examples_rclcpp_minimal_subscriber

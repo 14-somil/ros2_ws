@@ -1,0 +1,60 @@
+[0.028s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_cbg_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake /home/plague/ros2_ws/src/examples/rclcpp/executors/cbg_executor -DCMAKE_INSTALL_PREFIX=/home/plague/ros2_ws/install/examples_rclcpp_cbg_executor
+[0.047s] -- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.288s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.306s] -- Found rclcpp: 21.0.5 (/opt/ros/iron/share/rclcpp/cmake)
+[0.345s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.358s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.379s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.406s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.618s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.622s] -- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[0.784s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.024s] -- Found std_msgs: 5.0.0 (/opt/ros/iron/share/std_msgs/cmake)
+[1.076s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[1.183s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.185s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.186s] -- Configured cppcheck include dirs: /home/plague/ros2_ws/src/examples/rclcpp/executors/cbg_executor/include
+[1.186s] -- Configured cppcheck exclude dirs and/or files: 
+[1.187s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.187s] -- Configured cpplint exclude dirs and/or files: 
+[1.188s] -- Added test 'lint_cmake' to check CMake code style
+[1.189s] -- Added test 'uncrustify' to check C / C++ code style
+[1.189s] -- Configured uncrustify additional arguments: 
+[1.189s] -- Added test 'xmllint' to check XML markup files
+[1.195s] -- Configuring done
+[1.219s] -- Generating done
+[1.221s] -- Build files have been written to: /home/plague/ros2_ws/build/examples_rclcpp_cbg_executor
+[1.236s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_cbg_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake /home/plague/ros2_ws/src/examples/rclcpp/executors/cbg_executor -DCMAKE_INSTALL_PREFIX=/home/plague/ros2_ws/install/examples_rclcpp_cbg_executor
+[1.236s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_cbg_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --build /home/plague/ros2_ws/build/examples_rclcpp_cbg_executor -- -j8 -l8
+[1.411s] [35m[1mConsolidate compiler generated dependencies of target ping[0m
+[1.411s] [35m[1mConsolidate compiler generated dependencies of target ping_pong[0m
+[1.411s] [ 30%] Built target ping
+[1.411s] [35m[1mConsolidate compiler generated dependencies of target pong[0m
+[1.412s] [ 70%] Built target ping_pong
+[1.412s] [100%] Built target pong
+[1.418s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_cbg_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --build /home/plague/ros2_ws/build/examples_rclcpp_cbg_executor -- -j8 -l8
+[1.476s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_cbg_executor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --install /home/plague/ros2_ws/build/examples_rclcpp_cbg_executor
+[1.485s] -- Install configuration: ""
+[1.485s] -- Execute custom install script
+[1.487s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/lib/examples_rclcpp_cbg_executor/ping
+[1.487s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/lib/examples_rclcpp_cbg_executor/pong
+[1.487s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/lib/examples_rclcpp_cbg_executor/ping_pong
+[1.488s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/include/examples_rclcpp_cbg_executor/ping_node.hpp
+[1.488s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/include/examples_rclcpp_cbg_executor/pong_node.hpp
+[1.489s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_cbg_executor
+[1.489s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_cbg_executor
+[1.490s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/environment/ament_prefix_path.sh
+[1.490s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/environment/ament_prefix_path.dsv
+[1.491s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/environment/path.sh
+[1.491s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/environment/path.dsv
+[1.492s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/local_setup.bash
+[1.492s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/local_setup.sh
+[1.493s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/local_setup.zsh
+[1.493s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/local_setup.dsv
+[1.494s] -- Symlinking: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/package.dsv
+[1.506s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/ament_index/resource_index/packages/examples_rclcpp_cbg_executor
+[1.507s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.510s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/cmake/examples_rclcpp_cbg_executorConfig.cmake
+[1.510s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/cmake/examples_rclcpp_cbg_executorConfig-version.cmake
+[1.511s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_cbg_executor/share/examples_rclcpp_cbg_executor/package.xml
+[1.538s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_cbg_executor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --install /home/plague/ros2_ws/build/examples_rclcpp_cbg_executor

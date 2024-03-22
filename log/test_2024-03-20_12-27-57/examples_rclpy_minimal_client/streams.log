@@ -1,0 +1,22 @@
+[0.469s] Invoking command in '/home/plague/ros2_ws/src/examples/rclpy/services/minimal_client': AMENT_PREFIX_PATH=/home/plague/ros2_ws/install/examples_rclpy_minimal_client:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/plague/ros2_ws/build/examples_rclpy_minimal_client/pytest.xml --junit-prefix=examples_rclpy_minimal_client -o cache_dir=/home/plague/ros2_ws/build/examples_rclpy_minimal_client/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest
+[0.859s] [1m============================= test session starts ==============================[0m
+[0.859s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[0.859s] cachedir: /home/plague/ros2_ws/build/examples_rclpy_minimal_client/.pytest_cache
+[0.860s] rootdir: /home/plague/ros2_ws/src/examples/rclpy, configfile: pytest.ini
+[0.860s] plugins: ament-flake8-0.14.3, ament-xmllint-0.14.3, ament-lint-0.14.3, launch-testing-2.0.2, ament-copyright-0.14.3, launch-testing-ros-0.24.1, ament-pep257-0.14.3, cov-3.0.0, colcon-core-0.16.0
+[0.901s] [1mcollecting ... [0m[1m
+[0.901s] collected 3 items                                                              [0m
+[0.901s] 
+[1.253s] test/test_copyright.py [32m.[0m[32m                                                 [ 33%][0m
+[1.405s] test/test_flake8.py [32m.[0m[33m                                                    [ 66%][0m
+[1.428s] test/test_pep257.py [32m.[0m[33m                                                    [100%][0m
+[1.428s] 
+[1.428s] [33m=============================== warnings summary ===============================[0m
+[1.428s] services/minimal_client/test/test_flake8.py::test_flake8
+[1.428s] services/minimal_client/test/test_flake8.py::test_flake8
+[1.428s]   Warning: SelectableGroups dict interface is deprecated. Use select.
+[1.429s] 
+[1.429s] -- Docs: https://docs.pytest.org/en/stable/warnings.html
+[1.429s] - generated xml file: /home/plague/ros2_ws/build/examples_rclpy_minimal_client/pytest.xml -
+[1.429s] [33m======================== [32m3 passed[0m, [33m[1m2 warnings[0m[33m in 0.65s[0m[33m =========================[0m
+[1.589s] Invoked command in '/home/plague/ros2_ws/src/examples/rclpy/services/minimal_client' returned '0': AMENT_PREFIX_PATH=/home/plague/ros2_ws/install/examples_rclpy_minimal_client:${AMENT_PREFIX_PATH} PYTEST_ADDOPTS=--tb=short --junit-xml=/home/plague/ros2_ws/build/examples_rclpy_minimal_client/pytest.xml --junit-prefix=examples_rclpy_minimal_client -o cache_dir=/home/plague/ros2_ws/build/examples_rclpy_minimal_client/.pytest_cache PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/plague/ros2_ws/build/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_client/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -m pytest

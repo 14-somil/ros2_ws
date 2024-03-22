@@ -1,0 +1,61 @@
+[0.027s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake /home/plague/ros2_ws/src/examples/rclcpp/actions/minimal_action_client -DCMAKE_INSTALL_PREFIX=/home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client
+[0.043s] -- Found ament_cmake: 2.0.4 (/opt/ros/iron/share/ament_cmake/cmake)
+[0.287s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.303s] -- Found example_interfaces: 0.10.2 (/opt/ros/iron/share/example_interfaces/cmake)
+[0.342s] -- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)
+[0.355s] -- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)
+[0.376s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.403s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.746s] -- Found rclcpp: 21.0.5 (/opt/ros/iron/share/rclcpp/cmake)
+[0.878s] -- Found rmw_implementation_cmake: 7.1.0 (/opt/ros/iron/share/rmw_implementation_cmake/cmake)
+[0.880s] -- Found rmw_fastrtps_cpp: 7.1.3 (/opt/ros/iron/share/rmw_fastrtps_cpp/cmake)
+[1.038s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.273s] -- Found rclcpp_action: 21.0.5 (/opt/ros/iron/share/rclcpp_action/cmake)
+[1.330s] -- Found ament_lint_auto: 0.14.3 (/opt/ros/iron/share/ament_lint_auto/cmake)
+[1.465s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.467s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.467s] -- Configured cppcheck include dirs: 
+[1.467s] -- Configured cppcheck exclude dirs and/or files: 
+[1.468s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.468s] -- Configured cpplint exclude dirs and/or files: 
+[1.469s] -- Added test 'lint_cmake' to check CMake code style
+[1.469s] -- Added test 'uncrustify' to check C / C++ code style
+[1.469s] -- Configured uncrustify additional arguments: 
+[1.470s] -- Added test 'xmllint' to check XML markup files
+[1.471s] -- Configuring done
+[1.517s] -- Generating done
+[1.519s] -- Build files have been written to: /home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client
+[1.543s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake /home/plague/ros2_ws/src/examples/rclcpp/actions/minimal_action_client -DCMAKE_INSTALL_PREFIX=/home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client
+[1.545s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --build /home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client -- -j8 -l8
+[1.593s] [35m[1mConsolidate compiler generated dependencies of target action_client_member_functions[0m
+[1.594s] [35m[1mConsolidate compiler generated dependencies of target action_client_not_composable_with_feedback[0m
+[1.594s] [35m[1mConsolidate compiler generated dependencies of target action_client_not_composable_with_cancel[0m
+[1.596s] [35m[1mConsolidate compiler generated dependencies of target action_client_not_composable[0m
+[1.612s] [ 25%] Built target action_client_member_functions
+[1.615s] [ 50%] Built target action_client_not_composable_with_feedback
+[1.615s] [ 75%] Built target action_client_not_composable_with_cancel
+[1.618s] [100%] Built target action_client_not_composable
+[1.653s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --build /home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client -- -j8 -l8
+[1.700s] Invoking command in '/home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --install /home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client
+[1.709s] -- Install configuration: ""
+[1.709s] -- Execute custom install script
+[1.709s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_member_functions
+[1.709s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable
+[1.710s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable_with_cancel
+[1.710s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/lib/examples_rclcpp_minimal_action_client/action_client_not_composable_with_feedback
+[1.711s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/package_run_dependencies/examples_rclcpp_minimal_action_client
+[1.712s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/parent_prefix_path/examples_rclcpp_minimal_action_client
+[1.712s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/ament_prefix_path.sh
+[1.712s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/ament_prefix_path.dsv
+[1.712s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/path.sh
+[1.713s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/environment/path.dsv
+[1.713s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.bash
+[1.713s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.sh
+[1.713s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.zsh
+[1.713s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/local_setup.dsv
+[1.714s] -- Symlinking: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/package.dsv
+[1.723s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/ament_index/resource_index/packages/examples_rclcpp_minimal_action_client
+[1.723s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/cmake/examples_rclcpp_minimal_action_clientConfig.cmake
+[1.723s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/cmake/examples_rclcpp_minimal_action_clientConfig-version.cmake
+[1.725s] -- Up-to-date symlink: /home/plague/ros2_ws/install/examples_rclcpp_minimal_action_client/share/examples_rclcpp_minimal_action_client/package.xml
+[1.997s] Invoked command in '/home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/plague/ros2_ws/install/launch_testing_examples:/home/plague/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/plague/ros2_ws/install/examples_rclpy_minimal_service:/home/plague/ros2_ws/install/examples_rclpy_minimal_publisher:/home/plague/ros2_ws/install/examples_rclpy_minimal_client:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_server:/home/plague/ros2_ws/install/examples_rclpy_minimal_action_client:/home/plague/ros2_ws/install/examples_rclpy_guard_conditions:/home/plague/ros2_ws/install/examples_rclpy_executors:/opt/ros/iron /usr/bin/cmake --install /home/plague/ros2_ws/build/examples_rclcpp_minimal_action_client
