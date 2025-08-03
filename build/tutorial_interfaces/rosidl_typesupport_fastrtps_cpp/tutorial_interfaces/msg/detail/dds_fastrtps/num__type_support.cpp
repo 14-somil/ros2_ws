@@ -2,7 +2,6 @@
 // with input from tutorial_interfaces:msg/Num.idl
 // generated code does not contain a copyright notice
 #include "tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp"
-#include "tutorial_interfaces/msg/detail/num__functions.h"
 #include "tutorial_interfaces/msg/detail/num__struct.hpp"
 
 #include <limits>
@@ -174,9 +173,6 @@ static rosidl_message_type_support_t _Num__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_Num__callbacks,
   get_message_typesupport_handle_function,
-  &tutorial_interfaces__msg__Num__get_type_hash,
-  &tutorial_interfaces__msg__Num__get_type_description,
-  &tutorial_interfaces__msg__Num__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp

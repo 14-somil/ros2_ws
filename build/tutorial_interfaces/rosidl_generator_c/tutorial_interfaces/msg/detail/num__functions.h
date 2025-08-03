@@ -13,12 +13,6 @@ extern "C"
 #include <stdbool.h>
 #include <stdlib.h>
 
-#include "rosidl_runtime_c/action_type_support_struct.h"
-#include "rosidl_runtime_c/message_type_support_struct.h"
-#include "rosidl_runtime_c/service_type_support_struct.h"
-#include "rosidl_runtime_c/type_description/type_description__struct.h"
-#include "rosidl_runtime_c/type_description/type_source__struct.h"
-#include "rosidl_runtime_c/type_hash.h"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h"
 
@@ -98,30 +92,6 @@ bool
 tutorial_interfaces__msg__Num__copy(
   const tutorial_interfaces__msg__Num * input,
   tutorial_interfaces__msg__Num * output);
-
-/// Retrieve pointer to the hash of the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_tutorial_interfaces
-const rosidl_type_hash_t *
-tutorial_interfaces__msg__Num__get_type_hash(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_tutorial_interfaces
-const rosidl_runtime_c__type_description__TypeDescription *
-tutorial_interfaces__msg__Num__get_type_description(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the single raw source text that defined this type.
-ROSIDL_GENERATOR_C_PUBLIC_tutorial_interfaces
-const rosidl_runtime_c__type_description__TypeSource *
-tutorial_interfaces__msg__Num__get_individual_type_description_source(
-  const rosidl_message_type_support_t * type_support);
-
-/// Retrieve pointer to the recursive raw sources that defined the description of this type.
-ROSIDL_GENERATOR_C_PUBLIC_tutorial_interfaces
-const rosidl_runtime_c__type_description__TypeSource__Sequence *
-tutorial_interfaces__msg__Num__get_type_description_sources(
-  const rosidl_message_type_support_t * type_support);
 
 /// Initialize array of msg/Num messages.
 /**

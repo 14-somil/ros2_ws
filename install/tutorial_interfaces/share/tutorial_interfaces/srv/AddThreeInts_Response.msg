@@ -1,2 +1,1 @@
-
-int64 sum
+/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/srv/AddThreeInts_Response.msg

@@ -7,5 +7,6 @@
 #include "tutorial_interfaces/srv/detail/add_three_ints__struct.hpp"
 #include "tutorial_interfaces/srv/detail/add_three_ints__builder.hpp"
 #include "tutorial_interfaces/srv/detail/add_three_ints__traits.hpp"
+#include "tutorial_interfaces/srv/detail/add_three_ints__type_support.hpp"
 
 #endif  // TUTORIAL_INTERFACES__SRV__ADD_THREE_INTS_HPP_

@@ -177,9 +177,6 @@ static rosidl_message_type_support_t _Num__type_support = {
   rosidl_typesupport_fastrtps_c__identifier,
   &__callbacks_Num,
   get_message_typesupport_handle_function,
-  &tutorial_interfaces__msg__Num__get_type_hash,
-  &tutorial_interfaces__msg__Num__get_type_description,
-  &tutorial_interfaces__msg__Num__get_type_description_sources,
 };
 
 const rosidl_message_type_support_t *

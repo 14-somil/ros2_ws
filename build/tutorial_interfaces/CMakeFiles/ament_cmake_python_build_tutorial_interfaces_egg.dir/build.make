@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_tutorial_interfaces_egg.dir/compiler
 include CMakeFiles/ament_cmake_python_build_tutorial_interfaces_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_tutorial_interfaces_egg:
-	cd /home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_python/tutorial_interfaces && /usr/bin/python3.10 setup.py egg_info
+	cd /home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_python/tutorial_interfaces && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_tutorial_interfaces_egg: CMakeFiles/ament_cmake_python_build_tutorial_interfaces_egg
 ament_cmake_python_build_tutorial_interfaces_egg: CMakeFiles/ament_cmake_python_build_tutorial_interfaces_egg.dir/build.make

@@ -9,7 +9,6 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_cpp/message_type_support.hpp"
 #include "rosidl_typesupport_interface/macros.h"
-#include "tutorial_interfaces/msg/detail/num__functions.h"
 #include "tutorial_interfaces/msg/detail/num__struct.hpp"
 #include "rosidl_typesupport_introspection_cpp/field_types.hpp"
 #include "rosidl_typesupport_introspection_cpp/identifier.hpp"
@@ -72,9 +71,6 @@ static const rosidl_message_type_support_t Num_message_type_support_handle = {
   ::rosidl_typesupport_introspection_cpp::typesupport_identifier,
   &Num_message_members,
   get_message_typesupport_handle_function,
-  &tutorial_interfaces__msg__Num__get_type_hash,
-  &tutorial_interfaces__msg__Num__get_type_description,
-  &tutorial_interfaces__msg__Num__get_type_description_sources,
 };
 
 }  // namespace rosidl_typesupport_introspection_cpp

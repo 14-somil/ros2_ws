@@ -1,0 +1,24 @@
+running egg_info
+writing ../../build/design_challenge/design_challenge.egg-info/PKG-INFO
+writing dependency_links to ../../build/design_challenge/design_challenge.egg-info/dependency_links.txt
+writing entry points to ../../build/design_challenge/design_challenge.egg-info/entry_points.txt
+writing requirements to ../../build/design_challenge/design_challenge.egg-info/requires.txt
+writing top-level names to ../../build/design_challenge/design_challenge.egg-info/top_level.txt
+reading manifest file '../../build/design_challenge/design_challenge.egg-info/SOURCES.txt'
+writing manifest file '../../build/design_challenge/design_challenge.egg-info/SOURCES.txt'
+running build
+running build_py
+copying design_challenge/motor_model.py -> /home/plague/ros2_ws/build/design_challenge/build/lib/design_challenge
+running install
+running install_lib
+copying /home/plague/ros2_ws/build/design_challenge/build/lib/design_challenge/motor_model.py -> /home/plague/ros2_ws/install/design_challenge/lib/python3.10/site-packages/design_challenge
+byte-compiling /home/plague/ros2_ws/install/design_challenge/lib/python3.10/site-packages/design_challenge/motor_model.py to motor_model.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/plague/ros2_ws/install/design_challenge/lib/python3.10/site-packages/design_challenge-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/design_challenge/design_challenge.egg-info to /home/plague/ros2_ws/install/design_challenge/lib/python3.10/site-packages/design_challenge-0.0.0-py3.10.egg-info
+running install_scripts
+Installing controller script to /home/plague/ros2_ws/install/design_challenge/lib/design_challenge
+Installing motor_model script to /home/plague/ros2_ws/install/design_challenge/lib/design_challenge
+Installing wind_speed script to /home/plague/ros2_ws/install/design_challenge/lib/design_challenge
+writing list of installed files to '/home/plague/ros2_ws/build/design_challenge/install.log'

@@ -7,5 +7,6 @@
 #include "tutorial_interfaces/msg/detail/num__struct.hpp"
 #include "tutorial_interfaces/msg/detail/num__builder.hpp"
 #include "tutorial_interfaces/msg/detail/num__traits.hpp"
+#include "tutorial_interfaces/msg/detail/num__type_support.hpp"
 
 #endif  // TUTORIAL_INTERFACES__MSG__NUM_HPP_

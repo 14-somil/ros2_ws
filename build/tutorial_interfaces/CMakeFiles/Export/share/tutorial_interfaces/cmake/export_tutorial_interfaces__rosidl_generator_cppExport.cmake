@@ -54,9 +54,8 @@ endif()
 add_library(tutorial_interfaces::tutorial_interfaces__rosidl_generator_cpp INTERFACE IMPORTED)
 
 set_target_properties(tutorial_interfaces::tutorial_interfaces__rosidl_generator_cpp PROPERTIES
-  INTERFACE_COMPILE_FEATURES "cxx_std_17"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/tutorial_interfaces"
-  INTERFACE_LINK_LIBRARIES "geometry_msgs::geometry_msgs__rosidl_generator_cpp;std_msgs::std_msgs__rosidl_generator_cpp;builtin_interfaces::builtin_interfaces__rosidl_generator_cpp;service_msgs::service_msgs__rosidl_generator_cpp;rosidl_runtime_cpp::rosidl_runtime_cpp"
+  INTERFACE_LINK_LIBRARIES "geometry_msgs::geometry_msgs__rosidl_generator_cpp;std_msgs::std_msgs__rosidl_generator_cpp;builtin_interfaces::builtin_interfaces__rosidl_generator_cpp;rosidl_runtime_cpp::rosidl_runtime_cpp"
 )
 
 if(CMAKE_VERSION VERSION_LESS 3.0.0)

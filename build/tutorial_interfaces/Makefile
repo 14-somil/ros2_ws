@@ -211,19 +211,6 @@ tutorial_interfaces/fast:
 .PHONY : tutorial_interfaces/fast
 
 #=============================================================================
-# Target rules for targets named tutorial_interfaces__rosidl_generator_type_description
-
-# Build rule for target.
-tutorial_interfaces__rosidl_generator_type_description: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tutorial_interfaces__rosidl_generator_type_description
-.PHONY : tutorial_interfaces__rosidl_generator_type_description
-
-# fast build rule for target.
-tutorial_interfaces__rosidl_generator_type_description/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_type_description.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_type_description.dir/build
-.PHONY : tutorial_interfaces__rosidl_generator_type_description/fast
-
-#=============================================================================
 # Target rules for targets named tutorial_interfaces__rosidl_generator_c
 
 # Build rule for target.
@@ -328,17 +315,17 @@ tutorial_interfaces__rosidl_typesupport_cpp/fast:
 .PHONY : tutorial_interfaces__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_tutorial_interfaces
+# Target rules for targets named ament_cmake_python_symlink_tutorial_interfaces
 
 # Build rule for target.
-ament_cmake_python_copy_tutorial_interfaces: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_tutorial_interfaces
-.PHONY : ament_cmake_python_copy_tutorial_interfaces
+ament_cmake_python_symlink_tutorial_interfaces: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_tutorial_interfaces
+.PHONY : ament_cmake_python_symlink_tutorial_interfaces
 
 # fast build rule for target.
-ament_cmake_python_copy_tutorial_interfaces/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_tutorial_interfaces.dir/build.make CMakeFiles/ament_cmake_python_copy_tutorial_interfaces.dir/build
-.PHONY : ament_cmake_python_copy_tutorial_interfaces/fast
+ament_cmake_python_symlink_tutorial_interfaces/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_tutorial_interfaces.dir/build.make CMakeFiles/ament_cmake_python_symlink_tutorial_interfaces.dir/build
+.PHONY : ament_cmake_python_symlink_tutorial_interfaces/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_tutorial_interfaces_egg
@@ -418,30 +405,6 @@ tutorial_interfaces__py/fast:
 	$(MAKE) $(MAKESILENT) -f tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py.dir/build.make tutorial_interfaces__py/CMakeFiles/tutorial_interfaces__py.dir/build
 .PHONY : tutorial_interfaces__py/fast
 
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.o: rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.o
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.o
-
-# target to build an object file
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.o
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.o
-
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.i: rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.i
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.i
-
-# target to preprocess a source file
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.i
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.i
-
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.s: rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.s
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.s
-
-# target to generate assembly for a file
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.s
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.s
-
 rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.o: rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.c.o
 .PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.o
 
@@ -466,54 +429,6 @@ rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.c.s
 .PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.c.s
 
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.o: rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.o
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.o
-
-# target to build an object file
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.o
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.o
-
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.i: rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.i
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.i
-
-# target to preprocess a source file
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.i
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.i
-
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.s: rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.s
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.s
-
-# target to generate assembly for a file
-rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.s
-.PHONY : rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.s
-
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.o: rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.o
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.o
-
-# target to build an object file
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.o
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.o
-
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.i: rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.i
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.i
-
-# target to preprocess a source file
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.i
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.i
-
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.s: rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.s
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.s
-
-# target to generate assembly for a file
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.s
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.s
-
 rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.o: rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.c.o
 .PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.o
 
@@ -537,30 +452,6 @@ rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.s: r
 rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.c.s
 .PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.c.s
-
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.o: rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.o
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.o
-
-# target to build an object file
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.o
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.o
-
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.i: rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.i
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.i
-
-# target to preprocess a source file
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.i
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.i
-
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.s: rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.s
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.s
-
-# target to generate assembly for a file
-rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.s
-.PHONY : rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.s
 
 rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.o: rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c.o
 .PHONY : rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.o
@@ -984,11 +875,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_tutorial_interfaces_egg"
-	@echo "... ament_cmake_python_copy_tutorial_interfaces"
+	@echo "... ament_cmake_python_symlink_tutorial_interfaces"
 	@echo "... tutorial_interfaces"
 	@echo "... tutorial_interfaces__cpp"
 	@echo "... tutorial_interfaces__py"
-	@echo "... tutorial_interfaces__rosidl_generator_type_description"
 	@echo "... tutorial_interfaces_uninstall"
 	@echo "... uninstall"
 	@echo "... tutorial_interfaces__rosidl_generator_c"
@@ -1002,24 +892,12 @@ help:
 	@echo "... tutorial_interfaces__rosidl_typesupport_introspection_c"
 	@echo "... tutorial_interfaces__rosidl_typesupport_introspection_c__pyext"
 	@echo "... tutorial_interfaces__rosidl_typesupport_introspection_cpp"
-	@echo "... rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.o"
-	@echo "... rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.i"
-	@echo "... rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.s"
 	@echo "... rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.o"
 	@echo "... rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.i"
 	@echo "... rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.s"
-	@echo "... rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.o"
-	@echo "... rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.i"
-	@echo "... rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.s"
-	@echo "... rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.o"
-	@echo "... rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.i"
-	@echo "... rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.s"
 	@echo "... rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.o"
 	@echo "... rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.i"
 	@echo "... rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.s"
-	@echo "... rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.o"
-	@echo "... rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.i"
-	@echo "... rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.s"
 	@echo "... rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.o"
 	@echo "... rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.i"
 	@echo "... rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.s"

@@ -15,10 +15,12 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/detail/num__builder.hpp" "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp"
   "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/detail/num__struct.hpp" "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp"
   "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/detail/num__traits.hpp" "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp"
+  "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/detail/num__type_support.hpp" "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp"
   "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp" "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp"
   "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/srv/detail/add_three_ints__builder.hpp" "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp"
   "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/srv/detail/add_three_ints__struct.hpp" "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp"
   "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/srv/detail/add_three_ints__traits.hpp" "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp"
+  "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/srv/detail/add_three_ints__type_support.hpp" "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp"
   )
 
 

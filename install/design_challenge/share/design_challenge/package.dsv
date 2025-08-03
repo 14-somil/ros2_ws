@@ -1,0 +1,6 @@
+source;share/design_challenge/hook/pythonpath.ps1
+source;share/design_challenge/hook/pythonpath.dsv
+source;share/design_challenge/hook/pythonpath.sh
+source;share/design_challenge/hook/ament_prefix_path.ps1
+source;share/design_challenge/hook/ament_prefix_path.dsv
+source;share/design_challenge/hook/ament_prefix_path.sh

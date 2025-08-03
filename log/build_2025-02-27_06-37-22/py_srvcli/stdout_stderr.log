@@ -1,0 +1,23 @@
+running develop
+running egg_info
+creating py_srvcli.egg-info
+writing py_srvcli.egg-info/PKG-INFO
+writing dependency_links to py_srvcli.egg-info/dependency_links.txt
+writing entry points to py_srvcli.egg-info/entry_points.txt
+writing requirements to py_srvcli.egg-info/requires.txt
+writing top-level names to py_srvcli.egg-info/top_level.txt
+writing manifest file 'py_srvcli.egg-info/SOURCES.txt'
+reading manifest file 'py_srvcli.egg-info/SOURCES.txt'
+writing manifest file 'py_srvcli.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/plague/ros2_ws/install/py_srvcli/lib/python3.10/site-packages/py-srvcli.egg-link (link to .)
+Installing client script to /home/plague/ros2_ws/install/py_srvcli/lib/py_srvcli
+Installing service script to /home/plague/ros2_ws/install/py_srvcli/lib/py_srvcli
+
+Installed /home/plague/ros2_ws/build/py_srvcli
+running symlink_data
+creating /home/plague/ros2_ws/install/py_srvcli/share/ament_index
+creating /home/plague/ros2_ws/install/py_srvcli/share/ament_index/resource_index
+creating /home/plague/ros2_ws/install/py_srvcli/share/ament_index/resource_index/packages
+symbolically linking /home/plague/ros2_ws/build/py_srvcli/resource/py_srvcli -> /home/plague/ros2_ws/install/py_srvcli/share/ament_index/resource_index/packages
+symbolically linking /home/plague/ros2_ws/build/py_srvcli/package.xml -> /home/plague/ros2_ws/install/py_srvcli/share/py_srvcli

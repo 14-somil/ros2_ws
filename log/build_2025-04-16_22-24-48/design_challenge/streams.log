@@ -1,0 +1,25 @@
+[1.389s] Invoking command in '/home/plague/ros2_ws/src/design_challenge': PYTHONPATH=/home/plague/ros2_ws/build/design_challenge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/plague/ros2_ws/install/design_challenge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/design_challenge build --build-base /home/plague/ros2_ws/build/design_challenge/build install --record /home/plague/ros2_ws/build/design_challenge/install.log --single-version-externally-managed install_data
+[1.870s] running egg_info
+[1.871s] writing ../../build/design_challenge/design_challenge.egg-info/PKG-INFO
+[1.872s] writing dependency_links to ../../build/design_challenge/design_challenge.egg-info/dependency_links.txt
+[1.872s] writing entry points to ../../build/design_challenge/design_challenge.egg-info/entry_points.txt
+[1.872s] writing requirements to ../../build/design_challenge/design_challenge.egg-info/requires.txt
+[1.872s] writing top-level names to ../../build/design_challenge/design_challenge.egg-info/top_level.txt
+[1.876s] reading manifest file '../../build/design_challenge/design_challenge.egg-info/SOURCES.txt'
+[1.879s] writing manifest file '../../build/design_challenge/design_challenge.egg-info/SOURCES.txt'
+[1.880s] running build
+[1.880s] running build_py
+[1.880s] copying design_challenge/controller.py -> /home/plague/ros2_ws/build/design_challenge/build/lib/design_challenge
+[1.880s] running install
+[1.881s] running install_lib
+[1.882s] copying /home/plague/ros2_ws/build/design_challenge/build/lib/design_challenge/controller.py -> /home/plague/ros2_ws/install/design_challenge/lib/python3.10/site-packages/design_challenge
+[1.884s] byte-compiling /home/plague/ros2_ws/install/design_challenge/lib/python3.10/site-packages/design_challenge/controller.py to controller.cpython-310.pyc
+[1.885s] running install_data
+[1.885s] running install_egg_info
+[1.892s] removing '/home/plague/ros2_ws/install/design_challenge/lib/python3.10/site-packages/design_challenge-0.0.0-py3.10.egg-info' (and everything under it)
+[1.892s] Copying ../../build/design_challenge/design_challenge.egg-info to /home/plague/ros2_ws/install/design_challenge/lib/python3.10/site-packages/design_challenge-0.0.0-py3.10.egg-info
+[1.893s] running install_scripts
+[1.937s] Installing controller script to /home/plague/ros2_ws/install/design_challenge/lib/design_challenge
+[1.937s] Installing motor_model script to /home/plague/ros2_ws/install/design_challenge/lib/design_challenge
+[1.938s] writing list of installed files to '/home/plague/ros2_ws/build/design_challenge/install.log'
+[2.009s] Invoked command in '/home/plague/ros2_ws/src/design_challenge' returned '0': PYTHONPATH=/home/plague/ros2_ws/build/design_challenge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/plague/ros2_ws/install/design_challenge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/design_challenge build --build-base /home/plague/ros2_ws/build/design_challenge/build install --record /home/plague/ros2_ws/build/design_challenge/install.log --single-version-externally-managed install_data

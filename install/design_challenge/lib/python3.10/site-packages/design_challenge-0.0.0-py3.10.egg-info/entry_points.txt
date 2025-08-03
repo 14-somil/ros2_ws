@@ -1,0 +1,5 @@
+[console_scripts]
+controller = design_challenge.controller:main
+motor_model = design_challenge.motor_model:main
+wind_speed = design_challenge.wind_speed:main
+

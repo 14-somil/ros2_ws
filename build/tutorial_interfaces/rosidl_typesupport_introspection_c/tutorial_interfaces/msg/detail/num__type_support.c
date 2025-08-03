@@ -67,9 +67,6 @@ static rosidl_message_type_support_t tutorial_interfaces__msg__Num__rosidl_types
   0,
   &tutorial_interfaces__msg__Num__rosidl_typesupport_introspection_c__Num_message_members,
   get_message_typesupport_handle_function,
-  &tutorial_interfaces__msg__Num__get_type_hash,
-  &tutorial_interfaces__msg__Num__get_type_description,
-  &tutorial_interfaces__msg__Num__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_tutorial_interfaces
