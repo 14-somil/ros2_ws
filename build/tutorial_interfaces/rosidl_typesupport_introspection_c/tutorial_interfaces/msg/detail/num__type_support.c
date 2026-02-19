@@ -37,6 +37,7 @@ static rosidl_typesupport_introspection_c__MessageMember tutorial_interfaces__ms
     rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
+    false,  // is key
     false,  // is array
     0,  // array size
     false,  // is upper bound
@@ -56,6 +57,7 @@ static const rosidl_typesupport_introspection_c__MessageMembers tutorial_interfa
   "Num",  // message name
   1,  // number of fields
   sizeof(tutorial_interfaces__msg__Num),
+  false,  // has_any_key_member_
   tutorial_interfaces__msg__Num__rosidl_typesupport_introspection_c__Num_message_member_array,  // message members
   tutorial_interfaces__msg__Num__rosidl_typesupport_introspection_c__Num_init_function,  // function to initialize message memory (memory has to be allocated)
   tutorial_interfaces__msg__Num__rosidl_typesupport_introspection_c__Num_fini_function  // function to terminate message instance (will not free memory)
@@ -67,6 +69,9 @@ static rosidl_message_type_support_t tutorial_interfaces__msg__Num__rosidl_types
   0,
   &tutorial_interfaces__msg__Num__rosidl_typesupport_introspection_c__Num_message_members,
   get_message_typesupport_handle_function,
+  &tutorial_interfaces__msg__Num__get_type_hash,
+  &tutorial_interfaces__msg__Num__get_type_description,
+  &tutorial_interfaces__msg__Num__get_type_description_sources,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_tutorial_interfaces

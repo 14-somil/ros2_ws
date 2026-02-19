@@ -57,7 +57,7 @@ tutorial_interfaces__msg__Num__copy(
 }
 
 tutorial_interfaces__msg__Num *
-tutorial_interfaces__msg__Num__create()
+tutorial_interfaces__msg__Num__create(void)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   tutorial_interfaces__msg__Num * msg = (tutorial_interfaces__msg__Num *)allocator.allocate(sizeof(tutorial_interfaces__msg__Num), allocator.state);

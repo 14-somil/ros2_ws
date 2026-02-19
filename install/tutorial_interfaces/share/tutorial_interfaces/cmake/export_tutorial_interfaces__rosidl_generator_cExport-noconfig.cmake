@@ -12,8 +12,8 @@ set_target_properties(tutorial_interfaces::tutorial_interfaces__rosidl_generator
   IMPORTED_SONAME_NOCONFIG "libtutorial_interfaces__rosidl_generator_c.so"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS tutorial_interfaces::tutorial_interfaces__rosidl_generator_c )
-list(APPEND _IMPORT_CHECK_FILES_FOR_tutorial_interfaces::tutorial_interfaces__rosidl_generator_c "${_IMPORT_PREFIX}/lib/libtutorial_interfaces__rosidl_generator_c.so" )
+list(APPEND _cmake_import_check_targets tutorial_interfaces::tutorial_interfaces__rosidl_generator_c )
+list(APPEND _cmake_import_check_files_for_tutorial_interfaces::tutorial_interfaces__rosidl_generator_c "${_IMPORT_PREFIX}/lib/libtutorial_interfaces__rosidl_generator_c.so" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

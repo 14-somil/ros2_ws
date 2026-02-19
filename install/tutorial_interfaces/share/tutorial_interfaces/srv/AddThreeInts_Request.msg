@@ -1,1 +1,0 @@
-/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/srv/AddThreeInts_Request.msg

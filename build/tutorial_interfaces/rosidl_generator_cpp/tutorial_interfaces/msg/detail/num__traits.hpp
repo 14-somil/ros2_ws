@@ -2,6 +2,9 @@
 // with input from tutorial_interfaces:msg/Num.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "tutorial_interfaces/msg/num.hpp"
+
+
 #ifndef TUTORIAL_INTERFACES__MSG__DETAIL__NUM__TRAITS_HPP_
 #define TUTORIAL_INTERFACES__MSG__DETAIL__NUM__TRAITS_HPP_
 
@@ -65,20 +68,6 @@ inline std::string to_yaml(const Num & msg, bool use_flow_style = false)
 
 namespace rosidl_generator_traits
 {
-
-[[deprecated("use tutorial_interfaces::msg::to_block_style_yaml() instead")]]
-inline void to_yaml(
-  const tutorial_interfaces::msg::Num & msg,
-  std::ostream & out, size_t indentation = 0)
-{
-  tutorial_interfaces::msg::to_block_style_yaml(msg, out, indentation);
-}
-
-[[deprecated("use tutorial_interfaces::msg::to_yaml() instead")]]
-inline std::string to_yaml(const tutorial_interfaces::msg::Num & msg)
-{
-  return tutorial_interfaces::msg::to_yaml(msg);
-}
 
 template<>
 inline const char * data_type<tutorial_interfaces::msg::Num>()

@@ -55,6 +55,11 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
         # remove trailing slash
         string(SUBSTRING "${dir}" 0 ${offset} dir)
       endif()
+      
+      # Create destination directory.
+      # This does *not* solve the problem of empty directories WITHIN the install tree,
+      # but does make sure that the top-level directory specified by the caller gets created.
+      file(MAKE_DIRECTORY "${destination}")
 
       # glob recursive files
       set(relative_files "")
@@ -228,6 +233,10 @@ function(ament_cmake_symlink_install_targets)
       "unused/unsupported arguments: ${ARG_UNPARSED_ARGUMENTS}")
   endif()
 
+  list(REVERSE ARG_TARGET_FILES)
+  list(REMOVE_DUPLICATES ARG_TARGET_FILES)
+  list(REVERSE ARG_TARGET_FILES)
+
   # iterate over target files
   foreach(file ${ARG_TARGET_FILES})
     if(NOT IS_ABSOLUTE "${file}")
@@ -240,7 +249,7 @@ function(ament_cmake_symlink_install_targets)
     get_filename_component(fileext "${file}" EXT)
     if(fileext STREQUAL ".a" OR fileext STREQUAL ".lib")
       set(destination "${ARG_ARCHIVE_DESTINATION}")
-    elseif(fileext STREQUAL ".dylib" OR fileext MATCHES "\\.so(\\.[0-9]+)?(\\.[0-9]+)?(\\.[0-9]+)?$")
+    elseif(fileext MATCHES "(\\.[0-9]+)?(\\.[0-9]+)?(\\.[0-9]+)?\\.dylib$" OR fileext MATCHES "\\.so(\\.[0-9]+)?(\\.[0-9]+)?(\\.[0-9]+)?$")
       set(destination "${ARG_LIBRARY_DESTINATION}")
     elseif(fileext STREQUAL "" OR fileext STREQUAL ".dll" OR fileext STREQUAL ".exe")
       set(destination "${ARG_RUNTIME_DESTINATION}")
@@ -311,16 +320,22 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_type_description/tutorial_interfaces/msg/Num.json" "DESTINATION" "share/tutorial_interfaces/msg")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_type_description/tutorial_interfaces/srv/AddThreeInts.json" "DESTINATION" "share/tutorial_interfaces/srv")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/" "DESTINATION" "include/tutorial_interfaces/tutorial_interfaces" "PATTERN" "*.h")
 ament_cmake_symlink_install_directory("/home/plague/ros2_ws/src/tutorial_interfaces" DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_c/tutorial_interfaces/" "DESTINATION" "include/tutorial_interfaces/tutorial_interfaces" "PATTERN" "*.h")
 
-# install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/tutorial_interfaces/environment")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/tutorial_interfaces/environment")
+# install(FILES "/opt/ros/rolling/lib/python3.12/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/tutorial_interfaces/environment")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_3_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/tutorial_interfaces/environment")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/tutorial_interfaces/environment")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_4_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_typesupport_fastrtps_c/tutorial_interfaces/" "DESTINATION" "include/tutorial_interfaces/tutorial_interfaces" "PATTERN_EXCLUDE" "*.cpp")
 ament_cmake_symlink_install_directory("/home/plague/ros2_ws/src/tutorial_interfaces" DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_typesupport_fastrtps_c/tutorial_interfaces/" "DESTINATION" "include/tutorial_interfaces/tutorial_interfaces" "PATTERN_EXCLUDE" "*.cpp")
@@ -338,103 +353,97 @@ ament_cmake_symlink_install_directory("/home/plague/ros2_ws/src/tutorial_interfa
 ament_cmake_symlink_install_directory("/home/plague/ros2_ws/src/tutorial_interfaces" DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_typesupport_introspection_cpp/tutorial_interfaces/" "DESTINATION" "include/tutorial_interfaces/tutorial_interfaces" "PATTERN" "*.hpp")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/tutorial_interfaces/environment")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/tutorial_interfaces/environment")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/tutorial_interfaces/environment")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/tutorial_interfaces/environment")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_6_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_python/tutorial_interfaces/tutorial_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info")
-ament_cmake_symlink_install_directory("/home/plague/ros2_ws/src/tutorial_interfaces" DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_python/tutorial_interfaces/tutorial_interfaces.egg-info/" "DESTINATION" "local/lib/python3.10/dist-packages/tutorial_interfaces-0.0.0-py3.10.egg-info")
+# install(DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_python/tutorial_interfaces/tutorial_interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info")
+ament_cmake_symlink_install_directory("/home/plague/ros2_ws/src/tutorial_interfaces" DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_python/tutorial_interfaces/tutorial_interfaces.egg-info/" "DESTINATION" "lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info")
 
-# install(DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/tutorial_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
-ament_cmake_symlink_install_directory("/home/plague/ros2_ws/src/tutorial_interfaces" DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/" "DESTINATION" "local/lib/python3.10/dist-packages/tutorial_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+# install(DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/" "DESTINATION" "lib/python3.12/site-packages/tutorial_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
+ament_cmake_symlink_install_directory("/home/plague/ros2_ws/src/tutorial_interfaces" DIRECTORY "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/" "DESTINATION" "lib/python3.12/site-packages/tutorial_interfaces" "PATTERN_EXCLUDE" "*.pyc" "PATTERN_EXCLUDE" "__pycache__")
 
-# install("TARGETS" "tutorial_interfaces__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/tutorial_interfaces")
+# install("TARGETS" "tutorial_interfaces_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/tutorial_interfaces")
 include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "tutorial_interfaces__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/tutorial_interfaces")
+# install("TARGETS" "tutorial_interfaces_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/tutorial_interfaces")
 include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install("TARGETS" "tutorial_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/tutorial_interfaces")
+# install("TARGETS" "tutorial_interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/tutorial_interfaces")
 include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl" "DESTINATION" "share/tutorial_interfaces/msg")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/msg/Num.idl" "DESTINATION" "share/tutorial_interfaces/msg")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_7_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl" "DESTINATION" "share/tutorial_interfaces/srv")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces/srv/AddThreeInts.idl" "DESTINATION" "share/tutorial_interfaces/srv")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_8_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/src/tutorial_interfaces/msg/Num.msg" "DESTINATION" "share/tutorial_interfaces/msg")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/src/tutorial_interfaces/msg/Num.msg" "DESTINATION" "share/tutorial_interfaces/msg")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_9_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/src/tutorial_interfaces/srv/AddThreeInts.srv" "DESTINATION" "share/tutorial_interfaces/srv")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/src/tutorial_interfaces/srv/AddThreeInts.srv" "DESTINATION" "share/tutorial_interfaces/srv")
-
-# install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/srv/AddThreeInts_Request.msg" "DESTINATION" "share/tutorial_interfaces/srv")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/srv/AddThreeInts_Request.msg" "DESTINATION" "share/tutorial_interfaces/srv")
-
-# install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/srv/AddThreeInts_Response.msg" "DESTINATION" "share/tutorial_interfaces/srv")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/srv/AddThreeInts_Response.msg" "DESTINATION" "share/tutorial_interfaces/srv")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_10_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_11_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_12_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/tutorial_interfaces/environment")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/tutorial_interfaces/environment")
+# install(FILES "/opt/ros/rolling/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/tutorial_interfaces/environment")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_13_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/tutorial_interfaces/environment")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/tutorial_interfaces/environment")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_14_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/tutorial_interfaces/environment")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/tutorial_interfaces/environment")
+# install(FILES "/opt/ros/rolling/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/tutorial_interfaces/environment")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_15_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/tutorial_interfaces/environment")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/tutorial_interfaces/environment")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_16_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/tutorial_interfaces")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/tutorial_interfaces")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_17_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/tutorial_interfaces")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/tutorial_interfaces")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_18_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/tutorial_interfaces")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/tutorial_interfaces")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_19_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/tutorial_interfaces")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/tutorial_interfaces")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_20_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/tutorial_interfaces")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/tutorial_interfaces")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_21_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/tutorial_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_index/share/ament_index/resource_index/packages/tutorial_interfaces" "DESTINATION" "share/ament_index/resource_index/packages")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_22_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_23_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_24_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_25_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_26_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_27_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_28_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_29_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_core/tutorial_interfacesConfig.cmake" "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_core/tutorial_interfacesConfig-version.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_core/tutorial_interfacesConfig.cmake" "/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_core/tutorial_interfacesConfig-version.cmake" "DESTINATION" "share/tutorial_interfaces/cmake")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_30_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/plague/ros2_ws/src/tutorial_interfaces/package.xml" "DESTINATION" "share/tutorial_interfaces")
-ament_cmake_symlink_install_files("/home/plague/ros2_ws/src/tutorial_interfaces" FILES "/home/plague/ros2_ws/src/tutorial_interfaces/package.xml" "DESTINATION" "share/tutorial_interfaces")
+include("/home/plague/ros2_ws/build/tutorial_interfaces/ament_cmake_symlink_install_files_31_${CMAKE_INSTALL_CONFIG_NAME}.cmake")

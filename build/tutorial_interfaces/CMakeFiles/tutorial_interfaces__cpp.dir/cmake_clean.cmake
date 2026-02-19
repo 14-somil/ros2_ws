@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/tutorial_interfaces/msg/detail/num__traits.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/msg/detail/num__type_support.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/msg/num.hpp"
+  "rosidl_generator_cpp/tutorial_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/srv/add_three_ints.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/srv/detail/add_three_ints__builder.hpp"
   "rosidl_generator_cpp/tutorial_interfaces/srv/detail/add_three_ints__struct.hpp"

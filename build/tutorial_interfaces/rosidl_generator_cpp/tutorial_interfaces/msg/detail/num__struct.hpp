@@ -2,11 +2,15 @@
 // with input from tutorial_interfaces:msg/Num.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "tutorial_interfaces/msg/num.hpp"
+
+
 #ifndef TUTORIAL_INTERFACES__MSG__DETAIL__NUM__STRUCT_HPP_
 #define TUTORIAL_INTERFACES__MSG__DETAIL__NUM__STRUCT_HPP_
 
 #include <algorithm>
 #include <array>
+#include <cstdint>
 #include <memory>
 #include <string>
 #include <vector>

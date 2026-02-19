@@ -1,1 +1,0 @@
-/home/plague/ros2_ws/build/tutorial_interfaces/rosidl_generator_py/tutorial_interfaces/__init__.py

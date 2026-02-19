@@ -9,11 +9,23 @@
 #include "rosidl_runtime_c/message_type_support_struct.h"
 #include "rosidl_typesupport_interface/macros.h"
 #include "tutorial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h"
+#include "tutorial_interfaces/msg/detail/num__struct.h"
+#include "fastcdr/Cdr.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_tutorial_interfaces
+bool cdr_serialize_tutorial_interfaces__msg__Num(
+  const tutorial_interfaces__msg__Num * ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_tutorial_interfaces
+bool cdr_deserialize_tutorial_interfaces__msg__Num(
+  eprosima::fastcdr::Cdr &,
+  tutorial_interfaces__msg__Num * ros_message);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_tutorial_interfaces
 size_t get_serialized_size_tutorial_interfaces__msg__Num(
@@ -22,6 +34,22 @@ size_t get_serialized_size_tutorial_interfaces__msg__Num(
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_tutorial_interfaces
 size_t max_serialized_size_tutorial_interfaces__msg__Num(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_tutorial_interfaces
+bool cdr_serialize_key_tutorial_interfaces__msg__Num(
+  const tutorial_interfaces__msg__Num * ros_message,
+  eprosima::fastcdr::Cdr & cdr);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_tutorial_interfaces
+size_t get_serialized_size_key_tutorial_interfaces__msg__Num(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_tutorial_interfaces
+size_t max_serialized_size_key_tutorial_interfaces__msg__Num(
   bool & full_bounded,
   bool & is_plain,
   size_t current_alignment);

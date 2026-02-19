@@ -2,8 +2,10 @@
 // with input from tutorial_interfaces:msg/Num.idl
 // generated code does not contain a copyright notice
 #include "tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp"
+#include "tutorial_interfaces/msg/detail/num__functions.h"
 #include "tutorial_interfaces/msg/detail/num__struct.hpp"
 
+#include <cstddef>
 #include <limits>
 #include <stdexcept>
 #include <string>
@@ -11,6 +13,7 @@
 #include "rosidl_typesupport_fastrtps_cpp/identifier.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support.h"
 #include "rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp"
+#include "rosidl_typesupport_fastrtps_cpp/serialization_helpers.hpp"
 #include "rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp"
 #include "fastcdr/Cdr.h"
 
@@ -26,6 +29,7 @@ namespace msg
 namespace typesupport_fastrtps_cpp
 {
 
+
 bool
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_tutorial_interfaces
 cdr_serialize(
@@ -34,6 +38,7 @@ cdr_serialize(
 {
   // Member: num
   cdr << ros_message.num;
+
   return true;
 }
 
@@ -47,7 +52,8 @@ cdr_deserialize(
   cdr >> ros_message.num;
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
+
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_tutorial_interfaces
@@ -72,6 +78,7 @@ get_serialized_size(
   return current_alignment - initial_alignment;
 }
 
+
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_tutorial_interfaces
 max_serialized_size_Num(
@@ -91,11 +98,9 @@ max_serialized_size_Num(
   full_bounded = true;
   is_plain = true;
 
-
   // Member: num
   {
     size_t array_size = 1;
-
     last_member_size = array_size * sizeof(uint64_t);
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
@@ -116,6 +121,85 @@ max_serialized_size_Num(
 
   return ret_val;
 }
+
+bool
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_tutorial_interfaces
+cdr_serialize_key(
+  const tutorial_interfaces::msg::Num & ros_message,
+  eprosima::fastcdr::Cdr & cdr)
+{
+  // Member: num
+  cdr << ros_message.num;
+
+  return true;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_tutorial_interfaces
+get_serialized_size_key(
+  const tutorial_interfaces::msg::Num & ros_message,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  (void)padding;
+  (void)wchar_size;
+
+  // Member: num
+  {
+    size_t item_size = sizeof(ros_message.num);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  return current_alignment - initial_alignment;
+}
+
+size_t
+ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_tutorial_interfaces
+max_serialized_size_key_Num(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment)
+{
+  size_t initial_alignment = current_alignment;
+
+  const size_t padding = 4;
+  const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
+  (void)padding;
+  (void)wchar_size;
+
+  full_bounded = true;
+  is_plain = true;
+
+  // Member: num
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint64_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = tutorial_interfaces::msg::Num;
+    is_plain =
+      (
+      offsetof(DataType, num) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
+}
+
 
 static bool _Num__cdr_serialize(
   const void * untyped_ros_message,
@@ -166,13 +250,17 @@ static message_type_support_callbacks_t _Num__callbacks = {
   _Num__cdr_serialize,
   _Num__cdr_deserialize,
   _Num__get_serialized_size,
-  _Num__max_serialized_size
+  _Num__max_serialized_size,
+  nullptr
 };
 
 static rosidl_message_type_support_t _Num__handle = {
   rosidl_typesupport_fastrtps_cpp::typesupport_identifier,
   &_Num__callbacks,
   get_message_typesupport_handle_function,
+  &tutorial_interfaces__msg__Num__get_type_hash,
+  &tutorial_interfaces__msg__Num__get_type_description,
+  &tutorial_interfaces__msg__Num__get_type_description_sources,
 };
 
 }  // namespace typesupport_fastrtps_cpp

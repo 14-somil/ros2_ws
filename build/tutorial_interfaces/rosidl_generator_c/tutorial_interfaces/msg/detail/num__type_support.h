@@ -2,6 +2,9 @@
 // with input from tutorial_interfaces:msg/Num.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "tutorial_interfaces/msg/num.h"
+
+
 #ifndef TUTORIAL_INTERFACES__MSG__DETAIL__NUM__TYPE_SUPPORT_H_
 #define TUTORIAL_INTERFACES__MSG__DETAIL__NUM__TYPE_SUPPORT_H_
 
@@ -24,7 +27,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   tutorial_interfaces,
   msg,
   Num
-)();
+)(void);
 
 #ifdef __cplusplus
 }

@@ -2,6 +2,9 @@
 // with input from tutorial_interfaces:msg/Num.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "tutorial_interfaces/msg/num.h"
+
+
 #ifndef TUTORIAL_INTERFACES__MSG__DETAIL__NUM__STRUCT_H_
 #define TUTORIAL_INTERFACES__MSG__DETAIL__NUM__STRUCT_H_
 
@@ -13,7 +16,6 @@ extern "C"
 #include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
-
 
 // Constants defined in the message
 

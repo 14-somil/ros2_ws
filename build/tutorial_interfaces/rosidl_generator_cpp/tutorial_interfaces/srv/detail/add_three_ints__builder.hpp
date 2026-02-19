@@ -2,6 +2,9 @@
 // with input from tutorial_interfaces:srv/AddThreeInts.idl
 // generated code does not contain a copyright notice
 
+// IWYU pragma: private, include "tutorial_interfaces/srv/add_three_ints.hpp"
+
+
 #ifndef TUTORIAL_INTERFACES__SRV__DETAIL__ADD_THREE_INTS__BUILDER_HPP_
 #define TUTORIAL_INTERFACES__SRV__DETAIL__ADD_THREE_INTS__BUILDER_HPP_
 
@@ -123,6 +126,80 @@ inline
 auto build<::tutorial_interfaces::srv::AddThreeInts_Response>()
 {
   return tutorial_interfaces::srv::builder::Init_AddThreeInts_Response_sum();
+}
+
+}  // namespace tutorial_interfaces
+
+
+namespace tutorial_interfaces
+{
+
+namespace srv
+{
+
+namespace builder
+{
+
+class Init_AddThreeInts_Event_response
+{
+public:
+  explicit Init_AddThreeInts_Event_response(::tutorial_interfaces::srv::AddThreeInts_Event & msg)
+  : msg_(msg)
+  {}
+  ::tutorial_interfaces::srv::AddThreeInts_Event response(::tutorial_interfaces::srv::AddThreeInts_Event::_response_type arg)
+  {
+    msg_.response = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::tutorial_interfaces::srv::AddThreeInts_Event msg_;
+};
+
+class Init_AddThreeInts_Event_request
+{
+public:
+  explicit Init_AddThreeInts_Event_request(::tutorial_interfaces::srv::AddThreeInts_Event & msg)
+  : msg_(msg)
+  {}
+  Init_AddThreeInts_Event_response request(::tutorial_interfaces::srv::AddThreeInts_Event::_request_type arg)
+  {
+    msg_.request = std::move(arg);
+    return Init_AddThreeInts_Event_response(msg_);
+  }
+
+private:
+  ::tutorial_interfaces::srv::AddThreeInts_Event msg_;
+};
+
+class Init_AddThreeInts_Event_info
+{
+public:
+  Init_AddThreeInts_Event_info()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_AddThreeInts_Event_request info(::tutorial_interfaces::srv::AddThreeInts_Event::_info_type arg)
+  {
+    msg_.info = std::move(arg);
+    return Init_AddThreeInts_Event_request(msg_);
+  }
+
+private:
+  ::tutorial_interfaces::srv::AddThreeInts_Event msg_;
+};
+
+}  // namespace builder
+
+}  // namespace srv
+
+template<typename MessageType>
+auto build();
+
+template<>
+inline
+auto build<::tutorial_interfaces::srv::AddThreeInts_Event>()
+{
+  return tutorial_interfaces::srv::builder::Init_AddThreeInts_Event_info();
 }
 
 }  // namespace tutorial_interfaces
